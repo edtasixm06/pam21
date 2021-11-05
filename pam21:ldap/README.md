@@ -10,7 +10,7 @@
    es crea usant pam_mkhomedir.so.
 
 
-Configuració:
+### Configuració:
 
  * Cal instal·lar els paquets *libpam-ldap* i *libnss-ldap*.
  * Configurar el client ldap per definir com accedir al servidor ldap per defecte: */etc/ldap/ldap.conf*.
@@ -35,6 +35,12 @@ $ getent group
    iniciar sessió tant si són usuaris unix com si són usuaris de LDAP.
  * Configurar */etc/security/pam.mount.conf.xml* per incloure el recurs de disk temporal *tmpfs* que cal muntar
    automàticament dins del home de cada usuari en iniciar sessió.
+
+
+#### Descripció dels usuaris:
+
+ * Usuaris unix: unix01(unix01), unix02(unix02)  i unix03(unix03)
+ * Usuaris LDAP: pere(pere), marta(marta), anna(anna), jordi(jordi), pau(pau), user01(jupiter)...user09(jupiter)
 
 
 ``` 
