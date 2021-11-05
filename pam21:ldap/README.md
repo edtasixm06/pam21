@@ -31,7 +31,7 @@ $ getent group
 
  * Configuració de les regles PAm per incloure autenticació unix i autenticació LDAP. Cal configurar tots 
    els *type* per incloure l'autenticació pam_ldap.so.
- * **Validació-2 Autenticació LDAP i unix". Un cop configurats els fitxers de PAm els usuaris han de poder 
+ * **Validació-2 Autenticació LDAP i unix** un cop configurats els fitxers de PAm els usuaris han de poder 
    iniciar sessió tant si són usuaris unix com si són usuaris de LDAP.
  * Configurar */etc/security/pam.mount.conf.xml* per incloure el recurs de disk temporal *tmpfs* que cal muntar
    automàticament dins del home de cada usuari en iniciar sessió.
