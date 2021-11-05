@@ -12,7 +12,7 @@ Exemples d'imatges per practicar PAM individualment i per practicar autnticació
    dels *control* bàsics (*sufficient*, *required*,*requisite* i *optional*) i avançats (*die*, *ok*).
    També permet practicar *pam_mount.so* per muntar unitats de *tmpfs* o *NFS* als usuaris.
 
-* **edtasixm06/pam21:ldap** Container PAm per practicar l'autenticació PAM unix i PAM ldap. Utilitza els paquets
+* **edtasixm06/pam21:ldap** Container PAM per practicar l'autenticació PAM unix i PAM ldap. Utilitza els paquets
   *libpam-ldap*, *libnss-ldap*, *nscd* i *nslcd* per configurar l'accés al servei ldap i configura les regles PAM 
   per permetre tant usuaris unix com usuaris LDAP. En tots dos casos es munta en el home un recurs *tmpfs*
   temporal. En el cs dels usuaris LDAP si el seu home no existeix es crea usant *pam_mkhomedir.so*.
