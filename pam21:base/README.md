@@ -10,8 +10,8 @@
 
 Procediment per usar pam_mount.so
 
- * Instal·lar el paquet libpam-mount
- * Configurar pam_mount en els dos controls apropiats: +auth* i *session*.
+ * Instal·lar el paquet *libpam-mount*.
+ * Configurar pam_mount en els dos controls apropiats: *auth* i *session*.
  * Configurar el fitxer */etc/security/pam_mount.conf.xml* per definir els recursos a muntar. Poden ser globals 
    (per a tots els usuaris: generalment es defineixen al fstab) o individuals (dins el home d'un usuari). 
  * Realitzar un exemple usant un sistema tmpfs de 100MB dins el home dels usuaris.
