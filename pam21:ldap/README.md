@@ -44,6 +44,6 @@ $ getent group
 
 
 ``` 
-docker run --rm --name ldap.edt.org -h ldap.edt.org --net 2hisix -d edtasixm06/ldap21:grup
+docker run --rm --name ldap.edt.org -h ldap.edt.org --net 2hisix -d edtasixm06/ldap21:latest
 docker run --rm --name pam.edt.org -h pam.edt.prg --net 2hisix --privileged -it edtasixm06/pam21:ldap
 ```
