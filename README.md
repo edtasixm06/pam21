@@ -12,6 +12,12 @@ Exemples d'imatges per practicar PAM individualment i per practicar autnticació
    dels *control* bàsics (*sufficient*, *required*,*requisite* i *optional*) i avançats (*die*, *ok*).
    També permet practicar *pam_mount.so* per muntar unitats de *tmpfs* o *NFS* als usuaris.
 
+``` 
+docker run --rm --name pam.edt.org -h pam.edt.prg --net 2hisix -it edtasixm06/pam21:base
+
+```
+
+
  * **edtasixm06/pam21:ldap** Container PAM per practicar l'autenticació PAM unix i PAM ldap. Utilitza els paquets
    *libpam-ldap*, *libnss-ldap*, *nscd* i *nslcd* per configurar l'accés al servei ldap i configura les regles PAM 
    per permetre tant usuaris unix com usuaris LDAP. En tots dos casos es munta en el home un recurs *tmpfs*
@@ -19,9 +25,8 @@ Exemples d'imatges per practicar PAM individualment i per practicar autnticació
 
 
 ``` 
-docker run --rm --name pam.edt.org -h pam.edt.prg --net 2hisix -it edtasixm06/pam21:base
-
-docker run --rm --name pam.edt.org -h pam.edt.prg --net 2hisix --privileged -it edtasixm06/pam21:base
+docker run --rm --name ldap.edt.org -h ldap.edt.org --net 2hisix -d edtasixm06/ldap21:latest
+docker run --rm --name pam.edt.org  -h pam.edt.prg  --net 2hisix --privileged -it edtasixm06/pam21:base
 
 ```
 
