@@ -1,4 +1,4 @@
-# LDAP server
+# PAM 
 ## @edt ASIX M06-ASO Curs 2021-2022
 
 Podeu trobar les imatges docker al Dockehub de [edtasixm06](https://hub.docker.com/u/edtasixm06/)
