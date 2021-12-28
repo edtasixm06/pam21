@@ -58,3 +58,10 @@ chfn
 python3 /opt/docker/pamaware.py
 ```
 
+ * **edtasixm06/pam21:homes-sshfs** host pam client de ssh que munta els homes dels usuaris via sshfs. Està 
+   desenvolupat en realitat en el repositori: *edtasixm06/ssh21:sshfs*
+
+ * **edtasixm06/pam19:nfs** host pam client que munta el home dels usuaris via nfs. Utilitza el servidor nfs
+   desenvolupat en el repositori: nfs19:pam (aquest és el server nfs).
+
+
